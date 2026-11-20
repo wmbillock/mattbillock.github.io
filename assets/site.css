@@ -1,0 +1,65 @@
+/* Page layout for the public site. Tokens and components come from aw.css; nothing here redefines a color, radius or font. */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--ink);
+  font: 400 15px/24px var(--font-sans);
+  overflow-x: hidden;
+}
+@media (max-width: 839px) { body { font-size: 17px; } }
+a { color: var(--link); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: var(--radius-sm); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.site-bar {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-3);
+  max-width: 1120px; margin: 0 auto; padding: var(--space-4) var(--space-4);
+  border-bottom: 1px solid var(--line); flex-wrap: wrap;
+}
+.site-brand { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--ink); text-decoration: none; }
+.site-brand svg { width: 32px; height: 32px; color: var(--lime-text); flex: none; }
+.site-brand b { font: 600 28px/1 var(--font-script); color: var(--lime-text); }
+.site-nav { display: flex; gap: var(--space-1); flex-wrap: wrap; }
+.site-nav a { font: 500 13px/16px var(--font-sans); color: var(--ink); text-decoration: none; padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); }
+.site-nav a:hover { background: var(--surface-raised); }
+.site-nav a[aria-current="page"] { background: var(--lime-soft); color: var(--lime-text); }
+
+.site-main { max-width: 1120px; margin: 0 auto; padding: var(--space-8) var(--space-4) var(--space-12); display: flex; flex-direction: column; gap: var(--space-12); }
+.hero { display: flex; flex-direction: column; gap: var(--space-4); max-width: 720px; }
+.hero .display { color: var(--ink); }
+.hero-lede { margin: 0; font: 400 18px/28px var(--font-sans); color: var(--ink-muted); }
+.hero-actions { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+.hero-actions .aw-btn { text-decoration: none; }
+@media (max-width: 839px) { .hero .display { font-size: 44px; line-height: 48px; } }
+
+.section { display: flex; flex-direction: column; gap: var(--space-4); }
+.section-head { display: flex; flex-direction: column; gap: var(--space-1); }
+.section-head p { margin: 0; color: var(--ink-muted); }
+
+.project-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: var(--space-6); }
+.project-grid > li { display: flex; }
+.project-grid .aw-panel { flex: 1; }
+.project-grid .aw-panel-title a { color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
+.project-grid .aw-panel-title a:hover { color: var(--lime-text); text-decoration: underline; }
+.project-desc { margin: 0; }
+.project-stack { margin: 0; font: 400 13px/20px var(--font-mono); color: var(--ink-muted); }
+.project-langs { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-top: auto; }
+
+.more-list { border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface-raised); }
+.more-list .aw-row-main { white-space: normal; overflow-wrap: anywhere; }
+.more-list .aw-row-main a { color: var(--ink); }
+.more-list .aw-row-sub { white-space: normal; }
+
+.prose { max-width: 680px; display: flex; flex-direction: column; gap: var(--space-4); }
+.prose p { margin: 0; }
+.prose ul { margin: 0; padding-left: var(--space-6); display: flex; flex-direction: column; gap: var(--space-2); }
+.about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6); }
+.about-grid .aw-panel ul { margin: 0; padding-left: var(--space-6); display: flex; flex-direction: column; gap: var(--space-2); }
+
+.site-foot { max-width: 1120px; margin: 0 auto; padding: var(--space-6) var(--space-4) var(--space-8); border-top: 1px solid var(--line); color: var(--ink-muted); font: 400 13px/18px var(--font-sans); display: flex; gap: var(--space-4); flex-wrap: wrap; justify-content: space-between; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
