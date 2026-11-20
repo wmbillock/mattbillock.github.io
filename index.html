@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Willow Billock · GitHub work</title>
+<meta name="description" content="Willow Billock: software engineer building agent systems, music technology and the infrastructure under them. Selected public work on GitHub.">
+<meta name="author" content="Willow Billock">
+<meta property="og:title" content="Willow Billock · GitHub work">
+<meta property="og:description" content="Agent systems, music technology and the infrastructure under them.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="assets/willow.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap">
+<link rel="stylesheet" href="assets/aw.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-willow" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M24 4V44M24 6C17 12 14 24 15 40M24 6C31 12 34 24 33 40M24 12C19 17 18 27 19 36M24 12C29 17 30 27 29 36M24 6C12 10 8 22 8 32M24 6C36 10 40 22 40 32"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-bar">
+  <a class="site-brand" href="index.html" aria-label="Willow Billock, home">
+    <svg aria-hidden="true"><use href="#i-willow"/></svg>
+    <b>Willow Billock</b>
+  </a>
+  <nav class="site-nav" aria-label="Site">
+    <a href="index.html" aria-current="page">Work</a>
+    <a href="about.html">About</a>
+    <a href="https://github.com/wmbillock">GitHub</a>
+  </nav>
+</header>
+
+<main class="site-main">
+  <section class="hero" aria-labelledby="hero-title">
+    <p class="aw-eyebrow">Selected public work</p>
+    <h1 class="display" id="hero-title">Agents, brass and the plumbing underneath</h1>
+    <p class="hero-lede">I'm Willow Billock, a staff-level software engineer. I build multi-agent systems, software for the brass band world, and the self-hosted infrastructure that keeps it all running. Here's the public part of that.</p>
+    <div class="hero-actions">
+      <a class="aw-btn aw-btn-primary" href="https://github.com/wmbillock">See everything on GitHub</a>
+      <a class="aw-btn" href="about.html">About me</a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="agents-title">
+    <div class="section-head">
+      <h2 class="title" id="agents-title">Agent systems</h2>
+      <p>Multi-agent orchestration, mostly organized the way a drum corps or a band is: clear roles, a chain of command, and a score at the end.</p>
+    </div>
+    <ul class="project-grid">
+      <li>
+        <article class="aw-panel aw-panel-featured">
+          <h3 class="aw-panel-title"><a href="https://github.com/wmbillock/DrumSwarmInternational">DrumSwarmInternational</a></h3>
+          <p class="project-desc">An agent orchestration swarm built on a drum and bugle corps metaphor. Corps of AI agents work through seasons of shows, scored performances and reputation-driven drafting, with a design room, rehearsal modes and judging.</p>
+          <p class="project-stack">FastAPI · SQLAlchemy · Alembic · React 19 · TypeScript · Vite</p>
+          <div class="project-langs"><span class="aw-badge">Python</span><span class="aw-badge">TypeScript</span></div>
+        </article>
+      </li>
+      <li>
+        <article class="aw-panel aw-panel-featured">
+          <h3 class="aw-panel-title"><a href="https://github.com/wmbillock/ensemble">ensemble</a></h3>
+          <p class="project-desc">A hierarchical multi-agent system that builds software test-first. More than 25 agent roles, from an executive director down to test writers, with code-writing permissions enforced at the tool level, a self-improvement loop and a live monitoring UI.</p>
+          <p class="project-stack">Anthropic SDK · FastAPI · WebSockets · React 19 · Redux Toolkit · Tailwind</p>
+          <div class="project-langs"><span class="aw-badge">Python</span><span class="aw-badge">JavaScript</span></div>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="music-title">
+    <div class="section-head">
+      <h2 class="title" id="music-title">Music technology</h2>
+      <p>Tools for the North American Brass Band Association and its contests.</p>
+    </div>
+    <ul class="project-grid">
+      <li>
+        <article class="aw-panel">
+          <h3 class="aw-panel-title"><a href="https://github.com/wmbillock/nabba-contest-app">nabba-contest-app</a></h3>
+          <p class="project-desc">A cross-platform contest app for the North American Brass Band Association: schedules, bands and media from one React Native code base.</p>
+          <p class="project-stack">React Native · Expo · DigitalOcean</p>
+          <div class="project-langs"><span class="aw-badge">JavaScript</span></div>
+        </article>
+      </li>
+      <li>
+        <article class="aw-panel">
+          <h3 class="aw-panel-title"><a href="https://github.com/wmbillock/nabba-tech-suite">nabba-tech-suite</a></h3>
+          <p class="project-desc">Band management tooling for the same association: a Django REST API with a React front end.</p>
+          <p class="project-stack">Django · Django REST Framework · PostgreSQL · React</p>
+          <div class="project-langs"><span class="aw-badge">Python</span><span class="aw-badge">JavaScript</span></div>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="fun-title">
+    <div class="section-head">
+      <h2 class="title" id="fun-title">Developer joy</h2>
+      <p>Because a coding agent finishing a task should sound like a movie.</p>
+    </div>
+    <ul class="project-grid">
+      <li>
+        <article class="aw-panel">
+          <h3 class="aw-panel-title"><a href="https://github.com/wmbillock/openpeon-pipeline">openpeon-pipeline</a></h3>
+          <p class="project-desc">A Whisper-based pipeline that finds movie quotes in a film's audio, cuts and verifies the clips, and builds them into PeonPing sound packs, with a Streamlit dashboard for extraction, review and packaging.</p>
+          <p class="project-stack">Whisper · ffmpeg · Streamlit</p>
+          <div class="project-langs"><span class="aw-badge">Python</span></div>
+        </article>
+      </li>
+      <li>
+        <article class="aw-panel">
+          <h3 class="aw-panel-title"><a href="https://github.com/wmbillock/openpeon-movie-packs">openpeon-movie-packs</a></h3>
+          <p class="project-desc">The output: 23 CESP v1.0 sound packs, 273 clips across 10 films, for PeonPing and any CESP-compatible player.</p>
+          <p class="project-stack">CESP v1.0</p>
+          <div class="project-langs"><span class="aw-badge">Sound packs</span></div>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="earlier-title">
+    <div class="section-head">
+      <h2 class="title" id="earlier-title">Earlier samples</h2>
+      <p>Small serverless reference apps.</p>
+    </div>
+    <ul class="aw-rowlist more-list">
+      <li class="aw-row">
+        <span class="aw-row-main"><a href="https://github.com/wmbillock/thundra-movie-fetcher">thundra-movie-fetcher</a></span>
+        <span class="aw-row-sub">An AWS Step Function of two linked Lambda functions that pulls currently playing movies from The Movie Database.</span>
+        <span class="aw-row-readout">JavaScript</span>
+      </li>
+      <li class="aw-row">
+        <span class="aw-row-main"><a href="https://github.com/wmbillock/epsagon_serverless_ruby_sample">epsagon_serverless_ruby_sample</a></span>
+        <span class="aw-row-sub">An AWS Lambda function in Ruby, built with the Serverless Framework.</span>
+        <span class="aw-row-readout">Ruby</span>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <span>Willow Billock</span>
+  <span>Built with Arcade Willow · <a href="https://github.com/wmbillock">github.com/wmbillock</a></span>
+</footer>
+</body>
+</html>
